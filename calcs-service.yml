@@ -1,8 +1,4 @@
-server:
-  port: 9411
-
----
-spring:
+﻿spring:
   profiles: default
 eureka:
   instance:
@@ -12,6 +8,10 @@ eureka:
 ---
 spring:
   profiles: local
+  zipkin:
+    baseUrl: http://tracing-server:9411
+server:
+  port: 8091
 eureka:
   client:
     serviceUrl:

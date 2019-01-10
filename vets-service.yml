@@ -13,7 +13,7 @@ eureka:
 
 ---
 spring:
-  profiles: docker
+  profiles: local
   zipkin:
     baseUrl: http://tracing-server:9411
 server:

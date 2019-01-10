@@ -4,6 +4,9 @@
 eureka:
   instance:
     hostname: localhost
+  logging:
+    level: 'INFO'
+    config: classpath:eureka-log.xml
   # standalone mode
   client:
     registerWithEureka: false
